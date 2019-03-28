@@ -11,10 +11,6 @@ module.exports = {
     },
     plugins: [
         new webpack.ProgressPlugin(),
-        /**
-         * Lesson Plan Plugins
-         * 
-         */
         new PluginLessonsPlugins.OneBasicPluginWebpackPlugin()
     ]
 }
