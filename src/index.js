@@ -1,6 +1,8 @@
 import a from "./a";
 import b from "./b";
-import c from "./c";
+import c from "./cf";
+
+console.log(a,b,c);
 
 import("./lazy/lazy-a")
     .then(moduleA => {

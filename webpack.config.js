@@ -10,7 +10,8 @@ module.exports = {
         filename: "[name].chunk.js"
     },
     plugins: [
-        new PluginLessonsPlugins.OneBasicPluginWebpackPlugin()
+        new PluginLessonsPlugins.OneBasicPluginWebpackPlugin({message: "Plugin 1"}),
+        new PluginLessonsPlugins.TwoCompilerPluginWebpackPlugin({message: "Plugin 2"})
     ].concat([new HtmlWebpackPlugin({
         template: "./assets/index.html",
     })])
