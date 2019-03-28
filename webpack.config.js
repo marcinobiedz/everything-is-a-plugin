@@ -1,5 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const PluginLessonsPlugins = require("./plugin-lessons-plugins");
 
@@ -10,7 +10,8 @@ module.exports = {
         filename: "[name].chunk.js"
     },
     plugins: [
-        new webpack.ProgressPlugin(),
         new PluginLessonsPlugins.OneBasicPluginWebpackPlugin()
-    ]
-}
+    ].concat([new HtmlWebpackPlugin({
+        template: "./assets/index.html",
+    })])
+};

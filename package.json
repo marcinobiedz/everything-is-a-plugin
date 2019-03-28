@@ -5,12 +5,16 @@
   "devDependencies": {
     "chalk": "^1.1.3",
     "tapable": "^0.2.6",
-    "webpack": "^2.3.2",
-    "webpack-dev-server": "^2.4.2"
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.2.1"
   },
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
     "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js --verbose"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0"
   }
 }
